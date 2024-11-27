@@ -1,0 +1,38 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que le paiement --*/
+
+
+.toutePage
+{
+	width: 100vw;
+	min-height: calc(120vh - 5.648438rem);
+	overflow-y: scroll;
+	background-color: rgb(4,0,21);
+}
+
+.pasDePaiement
+{
+	width: 200vw; 
+	position: relative;
+	top: 20vh;
+	left: 20vw; 
+	font-size: 3rem; 
+	text-align: center; 
+}
+
+@media (max-width: 990px) {
+	.pasDePaiement
+	{
+		top: 10vh;
+		left: 5vw;
+		width: 90vw;
+		font-size: 2rem;
+	}
+
+     .toutePage
+        {
+                width: 100vw;
+                min-height: calc(170vh - 5.648438rem);
+                overflow-y: scroll;
+        }
+}
+

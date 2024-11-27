@@ -1,0 +1,71 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que les informations légales --*/
+
+
+/*-- GESTION DES INFORMATIONS GÉNÉRALES --*/
+
+
+
+
+/* Réinitialisation des marges et des rembourrages par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base pour la galerie */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.Galerie {
+    display: flex;
+    flex-wrap: wrap; /* Les images passent à la ligne lorsque l'espace est insuffisant */
+    justify-content: space-between; /* Espacement entre les images horizontalement */
+    align-content: space-between; /* Espacement entre les images verticalement */
+    padding: 2em; /* Espacement autour de la galerie */
+    align-self: center;
+}
+
+.image {
+    max-width: 31%;
+    min-width: 300px; /* 3 images par ligne (moins l'espacement entre les images) */
+    margin-bottom: 3vw; /* Espacement entre les lignes d'images */
+}
+
+.image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Supprime l'espace sous les images */
+}
+
+/*-- FIN GESTION de la galerie --*/
+
+
+
+/*-- GESTION DES INFORMATIONS PRÉCISES --*/
+
+
+
+#logo
+{
+	width: 30vw;
+}
+
+/*-- FIN GESTION DES INFORMATIONS PRÉCISES --*/
+
+
+
+/*-- GESTION DES BUGS DE LA VERSION MOBILE --*/
+
+@media (max-width: 990px) {
+
+
+	#logo
+	{
+		transform: translateY(50px);
+	}
+}
+
+/*-- FIN GESTION DES BUGS DE LA VERSION MOBILE --*/

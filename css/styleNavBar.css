@@ -1,0 +1,87 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que la navbar --*/
+
+/*-- GESTION DE L'OMBRE --*/
+
+.avecTransition
+{
+	-webkit-transition: box-shadow 500ms; /* Safari */
+	transition: box-shadow 500ms;
+
+}
+
+.boxAvecOmbre
+{
+	box-shadow: 0px 10px 50px 10px rgb(0,0,0);
+}
+
+@media (max-width: 992px) {
+	.boxAvecOmbre
+	{
+		box-shadow: 0px 3px 20px 1px rgb(0,0,0);
+	}
+}
+
+.navbar .container
+{
+	height: 5.648438rem;
+	font-size: 18px;
+}
+
+/*-- FIN GESTION DE L'OMBRE --*/
+
+
+
+/*-- GESTION ENCADRÉ BILLETTERIE --*/
+
+.encadreBilletterie
+{
+	border: solid 2px white;
+}
+
+@media (max-width: 992px) {
+	.encadreBilletterie
+	{
+		text-indent: 5px;
+	}
+}
+
+.encadreBilletterie:hover
+{
+	border-color: #D9B26F;
+}
+
+/*-- FIN GESTION ENCADRÉ BILLETTERIE --*/
+
+/*-- GESTION IMAGE DANS LA NAVBAR --*/
+
+.bg-primary
+{
+	background-color: white;
+	border-bottom: 2px solid #939393;
+}
+
+/*
+.imageFond
+{
+	background: url(../images/Patterns_ESPCI.png);
+	background-size: 50%;
+	
+}
+*/
+
+.nav-item
+{
+	font-family:'Arial',Helvetica,Arial,Lucida,sans-serif;
+	text-align: center;
+	margin-left: 3vh;
+	color: #E3BB64;
+	
+}
+
+.navbar-brand img
+{
+	max-width: 115px;
+	width:calc(100vw - 5rem);
+	height:auto;
+	mix-blend-mode: lighten;
+}

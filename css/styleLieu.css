@@ -1,0 +1,12 @@
+/* Map Section Styles */
+.map-container {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 600px;
+            margin: 20px auto;
+        }
+        #mapid {
+			height: 80vh; /* Hauteur de la carte à 100% de la hauteur de la fenêtre */
+   		 	width: 100vw;  /* Largeur de la carte à 100% de la largeur de la fenêtre */
+        }

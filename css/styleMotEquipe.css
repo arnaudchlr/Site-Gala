@@ -1,0 +1,51 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que le mot de l'équipe --*/
+
+
+.motEquipe
+{
+	width: 80vw; 
+	position: relative; 
+	left: 10vw;
+	overflow-x: hidden;
+	font-size: 20px;
+	color: #666666
+}
+
+@media (max-width: 992px) {
+	.motEquipe
+	{
+		width: 80vw;
+		left: 10vw;
+		font-size: 25px;	
+	}
+}
+
+.motEquipe h4
+{
+	margin-bottom: 50px;
+	margin-top:30px;
+	font-family: "garamond";
+	font-size: 24px;
+	text-decoration: underline #6A0D00;
+}
+
+.motEquipe p
+{
+	text-align: justify;
+	font-family: "garamond";
+}
+
+.emplacementSignature
+{
+	height: 100px;
+}
+
+#signatureEquipe
+{
+	margin-top: 40px;
+	position: absolute;
+	right: 0px;
+	font-family: "garamond";
+	font-size: 25px;
+	color: #E3BB64;
+}

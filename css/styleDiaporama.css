@@ -1,0 +1,160 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que les informations légales --*/
+
+
+/*-- GESTION DES INDICATEURS EN BAS --*/
+
+.carousel-indicators li
+{
+	width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px white;
+    border-radius: 50%;
+    text-indent: -999px;
+}
+
+.carousel-indicators li:hover
+{
+	background-image: url(../images/interieurRond2.png);
+	background-size: 100% 100%;	
+}
+
+.carousel-indicators li:hover p
+{
+	transform: translateY(-20px);
+	color: white;
+}
+
+.carousel-indicators .active
+{
+	background-image: url(../images/interieurRond.png);
+	background-size: 100% 100%;
+}
+
+/*-- FIN GESTION DES INDICATEURS EN BAS --*/
+
+
+
+/*-- GESTION DES DIAPOSITIVES --*/
+
+.carousel-item div
+{
+	max-width: 100vw;
+	min-height: calc(100vh - 5.648438rem);
+	position: relative;
+	overflow: hidden;
+}
+
+@media (max-width: 992px) {
+	.carousel-item div
+	{
+		height: inherit;
+		min-height: calc(80vh - 5.648438rem);
+	}
+}
+
+.carousel-item p
+{
+	margin-bottom: 0px;
+	margin-top: 16px;
+}
+
+.lastParagraphe
+{
+	padding-bottom: 50px;
+}
+
+.carousel-item img
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.reglageHorizontal
+{
+	width: 100%;
+	height: auto;
+}
+
+.reglageVertical
+{
+	height: 100%;
+	width: auto;
+}
+
+.carousel-item h1
+{
+	font-family: "Title";
+	font-size: 3rem;
+	text-align: left;
+	color:rgb(217, 178, 111);
+}
+
+.legendeGauche
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	padding-left: 13%;
+	padding-top: 5vh;
+	padding-right: 10%;
+	color: white;
+	background-image: url(../images/fondLegendeGauche.png);
+	background-size: 100% 100%;
+	text-align: justify;
+}
+
+.legendePage
+{
+	position: absolute;
+	top: -1px;
+	left: 0px;
+	width: 100%;
+	padding-left: 10%;
+	padding-top: 5vh;
+	padding-right: 10%;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 5vw;
+	font-family: "Manu";
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.legendeMobile
+{
+	position: absolute;
+	top: -1px;
+	left: 0px;
+	width: 100%;
+	padding-left: 12%;
+	padding-top: 2vh;
+	padding-right: 12%;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	text-align: justify;
+}
+
+.legendeMobile h1
+{
+	text-align: center;
+}
+
+.legendeDroite
+{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 50%;
+	padding-left: 10%;
+	padding-top: 5vh;
+	padding-right: 10%;
+	color: white;
+	background-image: url(../images/fondLegendeDroite.png);
+	background-size: 100% calc(100vh - 5.648438rem);
+}
+
+/*-- FIN GESTION DES DIAPOSITIVES --*/

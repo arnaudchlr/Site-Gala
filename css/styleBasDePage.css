@@ -1,0 +1,68 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que le bas de page --*/
+
+/*-- GENERALITES --*/
+
+.basDePage
+{
+	height: 100%; 
+	width: 100vw;
+	background-color: #082c4c; 
+	color: white;
+	display: grid;
+	row-gap: 0;
+	align-items: center;
+	vertical-align: baseline;
+	justify-content: center;
+	overflow-x: hidden;
+	flex-direction: row;
+	font-family: "Gill Sans", sans-serif;
+	padding: 0.5vh 1.5vw;
+}
+
+.basDePage div
+{
+	margin-top: 0px;
+}
+
+.basDePage p
+{
+	margin-bottom: 0px;
+}
+
+.basDePage a
+{
+	color: white;
+	text-align: center;
+}
+
+.basDePage img
+{
+	width: 4vh;
+	
+}
+
+.sectionTitle{
+	font-family: "Corps";
+	font-size: 12pt;
+	text-align: center;
+	margin:0;
+	text-transform: uppercase;
+	grid-row:1;
+}
+
+.content
+{
+	grid-row: 2;
+	display:flex;
+	font-size :11pt;
+}
+
+.legalMention {
+    text-align: center;
+}
+
+.legalMention a {
+    text-decoration: underline;
+    margin: 0 15px; /* Ajoute un espacement horizontal de 15px de chaque côté */
+    display: inline-block; /* Permet de gérer le margin entre les liens */
+}

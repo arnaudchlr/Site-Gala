@@ -1,0 +1,116 @@
+/*-- Ici se trouvent des propriétés qui ne concernent que les informations légales --*/
+
+
+/*-- GESTION DES INFORMATIONS GÉNÉRALES --*/
+
+.col-6{
+	color: white;
+}
+
+.informationsGala
+{
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	overflow-x: hidden;
+}
+
+.informationsGala h1
+{
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: "Title2";
+}
+
+.informationsGala h2
+{
+	padding-top: 5vh;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: "Subtitles";
+}
+
+.informationsGala h3
+{
+	font-size: 1.2rem;
+	padding-bottom: 3vh;
+	font-family: "Subtitles";
+}
+
+.annonceAdresse
+{
+	margin-bottom: 0px;
+}
+
+.adresse
+{
+	transform: translateX(3vw);
+}
+
+.separateur
+{
+	border: solid 1px #474747;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	width: 60%;
+	position: relative;
+	left: 10%;
+}
+
+/*-- FIN GESTION DES INFORMATIONS GÉNÉRALES --*/
+
+
+
+/*-- GESTION DES INFORMATIONS PRÉCISES --*/
+
+.informationsGala table
+{
+	min-width: 50%;
+	transform: translateX(20%);
+	font-family:"Corps thin"
+}
+
+.informationsGala td:first-child
+{
+	font-weight: bold;
+	text-align: right;
+	padding-right: 50px;
+	font-family:"Corps"
+}
+
+#logo
+{
+	width: 30vw;
+}
+
+/*-- FIN GESTION DES INFORMATIONS PRÉCISES --*/
+
+
+
+/*-- GESTION DES BUGS DE LA VERSION MOBILE --*/
+
+@media (max-width: 990px) {
+	.separateur
+	{
+		width: 150%;
+	}
+
+	.informationsGala table
+	{
+		width: 220%;
+		transform: translateX(-10%);
+	}
+
+	.informationsGala tr
+	{
+		height: 35px;
+	}	
+
+	#logo
+	{
+		transform: translateY(50px);
+	}
+}
+
+/*-- FIN GESTION DES BUGS DE LA VERSION MOBILE --*/

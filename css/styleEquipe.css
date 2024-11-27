@@ -1,0 +1,69 @@
+.team {
+    text-align: center;
+}
+
+.team h2 {
+
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team-container {
+	font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Par défaut, une colonne pour petits écrans */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+	color: #666666;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 576px) { /* Taille tablette */
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    }
+}
+
+@media (min-width: 992px) { /* Taille ordinateur */
+    .team-container {
+        grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    }
+}
+  
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 20px;
+	margin-top: -8px;
+	margin-bottom: 12px;
+}
+
+.team-member p {
+    font-size: 16px;
+    margin: 5px 0;
+}
