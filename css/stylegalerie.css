@@ -8,6 +8,16 @@
 }
 
 /* Galerie */
+
+.titre h2 {
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +28,7 @@
 
 .gallery img {
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
