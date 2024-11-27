@@ -1,0 +1,49 @@
+.container h2 {
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+	margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.partner-logo {
+    width: 100%;
+    max-width: 175px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8CB8E8;
+}
+
+/* Modal taille personnalisée */
+.modal-custom {
+    max-width: 90%; /* Largeur principale */
+}
+
+@media (max-width: 768px) {
+    .modal-custom {
+        max-width: 90%; /* Ajustement pour tablettes */
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-custom {
+        max-width: 95%; /* Ajustement pour smartphones */
+    }
+}
+
