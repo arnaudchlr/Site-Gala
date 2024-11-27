@@ -1,71 +1,108 @@
-/*-- Ici se trouvent des propriétés qui ne concernent que les informations légales --*/
-
-
-/*-- GESTION DES INFORMATIONS GÉNÉRALES --*/
-
-
-
-
-/* Réinitialisation des marges et des rembourrages par défaut */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Variables pour les breakpoints */
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
 }
 
-/* Styles de base pour la galerie */
-body {
-    font-family: Arial, sans-serif;
-}
-
-.Galerie {
+/* Galerie */
+.gallery {
     display: flex;
-    flex-wrap: wrap; /* Les images passent à la ligne lorsque l'espace est insuffisant */
-    justify-content: space-between; /* Espacement entre les images horizontalement */
-    align-content: space-between; /* Espacement entre les images verticalement */
-    padding: 2em; /* Espacement autour de la galerie */
-    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
 }
 
-.image {
-    max-width: 31%;
-    min-width: 300px; /* 3 images par ligne (moins l'espacement entre les images) */
-    margin-bottom: 3vw; /* Espacement entre les lignes d'images */
-}
-
-.image img {
-    max-width: 100%;
-    height: 100%;
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     object-fit: cover;
-    display: block; /* Supprime l'espace sous les images */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-/*-- FIN GESTION de la galerie --*/
-
-
-
-/*-- GESTION DES INFORMATIONS PRÉCISES --*/
-
-
-
-#logo
-{
-	width: 30vw;
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
-/*-- FIN GESTION DES INFORMATIONS PRÉCISES --*/
-
-
-
-/*-- GESTION DES BUGS DE LA VERSION MOBILE --*/
-
-@media (max-width: 990px) {
-
-
-	#logo
-	{
-		transform: translateY(50px);
-	}
+/* Modal */
+.modal {
+    position: fixed;
+    top: 5.773438rem; /* Décale le modal vers le bas */
+    left: 0;
+    width: 100%;
+    height: calc(100%-5.773438em); /* Ajuste la hauteur en conséquence */
+    overflow-y: auto; /* Permet de défiler si le contenu déborde */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/*-- FIN GESTION DES BUGS DE LA VERSION MOBILE --*/
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain; /* Conserve le ratio d'aspect */
+    margin-top: 3%; /* Distance depuis le haut */
+    background-color: #666666;
+    padding: 0; /* Supprime tout espace interne */
+}
+
+/* Conteneur des boutons dans le modal */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espace entre les boutons */
+    position: absolute;
+    bottom: 20px; /* Place les boutons en bas */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+}
+
+/* Boutons */
+.close, .nav-btn, .download-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.close {
+    top: 6.648438rem; /* Distance depuis le haut */
+    right: 20px; /* Distance depuis la droite */
+}
+
+.nav-btn:hover, .download-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsivité */
+@media (max-width: var(--breakpoint-md)) {
+    .gallery img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+    .gallery img {
+        max-width: 100px;
+    }
+
+    .close, .nav-btn, .download-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

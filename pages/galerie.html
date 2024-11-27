@@ -11,7 +11,8 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/styleNavBar.css" />
 		<link rel="stylesheet" href="../css/styleBasDePage.css" />
-
+		<link rel="stylesheet" href="../css/stylegalerie.css" />
+		
 	</head>
 
 	<body>
@@ -54,64 +55,28 @@
 	    </div>
 	    
 	    <div class="corps">
+		<h1>Galerie d'Images</h1>
+    <div class="gallery">
+        <img src="../images/Galerie/00003.jpg" alt="Image 1">
+        <img src="../images/Galerie/00004.jpg" alt="Image 2">
+        <img src="../images/Galerie/00005.jpg" alt="Image 3">
+        <!-- Ajoutez d'autres images ici -->
+    </div>
+			
+    <!-- Modal -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Image en grand">
+    <div class="modal-buttons">
+        <button class="nav-btn prev-btn">&#8249;</button>
+        <a id="download-btn" href="#" download class="download-btn">Télécharger</a>
+        <button class="nav-btn next-btn">&#8250;</button>
+    </div>
+</div>
 
-		    <div class="Galerie">
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(1).jpg" alt="Photo 1">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(2).jpg" alt="Photo 2">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(3).jpg" alt="Photo 3">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(4).jpg" alt="Photo 4">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(5).jpg" alt="Photo 5">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(6).jpg" alt="Photo 6">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(7).jpg" alt="Photo 7">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(8).jpg" alt="Photo 8">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(9).jpg" alt="Photo 9">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(10).jpg" alt="Photo 10">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(11).jpg" alt="Photo 11">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(12).jpg" alt="Photo 12">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(13).jpg" alt="Photo 13">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(14).jpg" alt="Photo 14">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(15).jpg" alt="Photo 15">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(16).jpg" alt="Photo 16">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(17).jpg" alt="Photo 17">
-				</div>
-				<div class="image">
-					<img src="https://grand-gala.minesparis.psl.eu/images/galerie/Grand&#32;Gala&#32;(18).jpg" alt="Photo 18">
-				</div>
-
-			</div>
+			
+	<script src="../js/galerie.js"></script>
+			
 
 		    <div class="basDePage">
 				<div class="legalMention">
@@ -129,5 +94,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
+
 	</body>
 </html>
