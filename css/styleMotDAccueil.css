@@ -33,3 +33,18 @@
 	font-family: "garamond";
 	text-align: right;
 }
+
+.emplacementSignature
+{
+	height: 100px;
+}
+
+#signatureEquipe
+{
+	margin-top: 10px;
+	position: absolute;
+	right: 0px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 30px;
+	color: #E3BB64;
+}

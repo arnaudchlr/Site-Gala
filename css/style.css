@@ -47,7 +47,45 @@
 	color: #E3BB64;
 	font-size: 2rem;
 	margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+
+.texte
+{
+    font-family: "Garamond", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+	width: 80vw; 
+	position: relative; 
+	left: 10vw;
+	overflow-x: hidden;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 8px;
+	color: #666666
+}
+
+@media (max-width: 992px) {
+	.texte
+	{
+		width: 80vw;
+		left: 10vw;	
+	}
+}
+
+.texte h4
+{	
+	margin-bottom: 20px;
+	font-family: "garamond";
+	font-size: 24px;
+	text-decoration: underline #6A0D00;
+}
+
+.texte p
+{
+	text-align: justify;
+	font-family: "garamond";
 }
 
 body

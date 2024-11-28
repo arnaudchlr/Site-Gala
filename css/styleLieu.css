@@ -1,17 +1,3 @@
-/* Map Section Styles */
-.map-container {
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            padding: 10px;
-            width: 600px;
-        }
-        #mapid {
-			height: 80vh; /* Hauteur de la carte à 100% de la hauteur de la fenêtre */
-   		 	width: 100vw;  /* Largeur de la carte à 100% de la largeur de la fenêtre */
-        }
-
-
-
 /* Section Transport */
 .transport-section {
     text-align: center;
@@ -38,6 +24,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+	font-family: "garamond";
+	font-size: 1.2rem;
 }
 
 .transport-icon {
@@ -57,3 +45,16 @@
         font-size: 1.5rem;
     }
 }
+
+
+/* Map Section Styles */
+.map-container {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 600px;
+        }
+        #mapid {
+			height: 80vh; /* Hauteur de la carte à 100% de la hauteur de la fenêtre */
+   		 	width: 100vw;  /* Largeur de la carte à 100% de la largeur de la fenêtre */
+        }

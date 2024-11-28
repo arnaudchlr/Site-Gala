@@ -92,36 +92,3 @@
         font-size: 1.5rem;
     }
 }
-
-
-.presentation
-{
-	width: 80vw; 
-	position: relative; 
-	left: 10vw;
-	overflow-x: hidden;
-	font-size: 20px;
-	color: #666666
-}
-
-@media (max-width: 992px) {
-	.presentation
-	{
-		width: 80vw;
-		left: 10vw;	
-	}
-}
-
-.presentation h4
-{	
-	margin-bottom: 20px;
-	font-family: "garamond";
-	font-size: 24px;
-	text-decoration: underline #6A0D00;
-}
-
-.presentation p
-{
-	text-align: justify;
-	font-family: "garamond";
-}

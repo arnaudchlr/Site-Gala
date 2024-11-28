@@ -74,8 +74,15 @@
 	font-family:'Arial',Helvetica,Arial,Lucida,sans-serif;
 	text-align: center;
 	color: #E3BB64;
-	
 }
+
+@media (min-width: 992px) {
+	.nav-item
+	{
+		padding: 15px;
+	}
+}
+
 
 .navbar-brand img
 {
