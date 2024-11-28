@@ -9,14 +9,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Ajouter un marqueur pour l'emplacement de l'événement
 var marker = L.marker([48.864605, 2.237496]).addTo(mymap); // Remplacez par les coordonnées de votre événement
 
-// Détecter si l'utilisateur est sur mobile
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
 // Adresse et lien Google Maps
-var locationName = "Château de Longchamp, <br> 1 Carré de Longchamp, 75016 Paris";
-var googleMapsLink = isMobile 
-    ? "geo:48.864605,2.237496?q=" + encodeURIComponent(locationName) // Application native sur mobile
-    : "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(locationName); // Navigateur sur desktop
+var locationName = "Château de Longchamp, <br>1 Carré de Longchamp, 75016 Paris";
+var googleMapsLink = "https://www.google.com/maps?q=" + encodeURIComponent("The Château de Longchamp - Good Planet Foundation, 1 Carré de Longchamp, 75016 Paris");
 
 // Ajouter une popup au marqueur
 marker.bindPopup(
