@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="../css/styleBasDePage.css" />
 		<link rel="stylesheet" href="../css/styleLieu.css" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-
 	</head>
 
 	<body>
@@ -30,7 +29,7 @@
 	                        <a class="nav-link" href="../index.html">Accueil</a>
 	                    </li>                        
 	                    <li class="nav-item"> 
-	                        <a class="nav-link" href="lieus.html">Le lieu</a>
+	                        <a class="nav-link" href="lieu.html">Le lieu</a>
 	                    </li>
 	                    <li class="nav-item">
 	                    	<a class="nav-link" href="ecole.html">L'École</a>
@@ -48,17 +47,47 @@
 
 	                <ul class="nav navbar-nav ml-auto">
 	                    <li class="nav-item">
-	                        <a class="nav-link encadreBilletterie" href="pages/reservation.html">Réservation</a>
+	                        <a class="nav-link encadreBilletterie" href="pages/reservation.html">Billetterie</a>
 	                    </li>
 	                </ul>
-
 	            </div>
 	        </div>
 	    </div>
 		
-		
 	    <div class="corps">
 
+			<div class="titre"><h2 >Se rendre sur place</h2></div>
+            <!-- Section Moyen de Transport -->
+            <div class="transport-section">
+                
+                
+                <!-- Transports en commun -->
+                <div class="transport-group">
+                    <h3 class="transport-group-title">Transports en commun</h3>
+                    <div class="row transport-options">
+                        <div class="col-12 col-md-6 text-center transport-item">
+                            <img src="../images/metro.png" alt="Icône Métro et Bus" class="transport-icon" />
+							<img src="../images/bus.png" alt="Icône Métro et Bus" class="transport-icon" />
+                            <p><strong>Métro + Bus :</strong> Porte Maillot (ligne 1), puis Carrefour de Longchamp (ligne 244)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voiture et VTC -->
+                <div class="transport-group">
+                    <h3 class="transport-group-title">Voiture et VTC</h3>
+                    <div class="row transport-options">
+                        <div class="col-12 col-md-2 text-center transport-item">
+                            <img src="../images/parking.png" alt="Icône Voiture" class="transport-icon" />
+                            <p><strong>Voiture :</strong> Grand parking <br> autour du lieu</p>
+                        </div>
+                        <div class="col-12 col-md-2 text-center transport-item">
+                            <img src="../images/comin.jpg" alt="Icône VTC" class="transport-icon" />
+                            <p><strong>VTC :</strong> Partenariat avec <span class="comin">Comin</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     		<div id="mapid"></div>
     		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -76,7 +105,6 @@
 		    </div>
 		</div>
 
-		
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
 	</body>

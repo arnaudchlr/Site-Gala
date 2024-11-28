@@ -41,6 +41,15 @@
 	background-color: white;
 }
 
+.titre h2 {
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 body
 {
 	overflow-x: hidden;

@@ -4,9 +4,56 @@
             border-radius: 8px;
             padding: 10px;
             width: 600px;
-            margin: 20px auto;
         }
         #mapid {
 			height: 80vh; /* Hauteur de la carte à 100% de la hauteur de la fenêtre */
    		 	width: 100vw;  /* Largeur de la carte à 100% de la largeur de la fenêtre */
         }
+
+
+
+/* Section Transport */
+.transport-section {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.transport-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.transport-group {
+    margin-bottom: 30px;
+}
+
+.transport-group-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.transport-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.transport-icon {
+    width: 80px;
+    height: auto;
+}
+
+.comin {
+    font-weight: bold;
+	font-style: italic;
+    color: #FCB0FF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .transport-title {
+        font-size: 1.5rem;
+    }
+}

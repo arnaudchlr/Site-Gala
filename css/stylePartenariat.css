@@ -1,15 +1,41 @@
-.container h2 {
-	font-family: "Title";
-	text-align: center;
-	color: #E3BB64;
-	font-size: 2rem;
-	margin-top: -15px;
-    margin-bottom: 30px;
+.texte
+{
+	width: 80vw; 
+	position: relative; 
+	left: 10vw;
+	overflow-x: hidden;
+	font-size: 20px;
+	color: #666666
+}
+
+@media (max-width: 992px) {
+	.texte
+	{
+		width: 80vw;
+		left: 10vw;	
+	}
+}
+
+
+.texte p
+{
+	text-align: justify;
+	font-family: "garamond";
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Aligne les items par leur centre */
 }
 
 .partner-logo {
-    width: 100%;
-    max-width: 175px;
+    width: 150px;
+    height: 150px; /* Fixe une hauteur pour un alignement précis */
+    display: inline-block;
+    object-fit: contain; /* Garde les proportions des logos */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -18,6 +44,7 @@
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .modal-content {
     text-align: center;
