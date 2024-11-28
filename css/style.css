@@ -31,31 +31,6 @@
 	src: url("../fonts/MadeC_reg.otf")
 }
 
-@font-face 
-{
-    font-family: "Victor";
-    src: url("https://grand-gala.minesparis.psl.eu/fonts/AppleChancery.ttf");
-}
-
-@font-face {
-	font-family: "Helvetica";
-	font-style: normal;
-	font-weight: normal;
-	src: url('https://grand-gala.minesparis.psl.eu/fonts/Candara.ttf');
-}
-
-@font-face 
-{
-    font-family: "Logo";
-    src: url("https://grand-gala.minesparis.psl.eu/fonts/ROCKET\ WILDNESS.otf");
-}
-
-@font-face 
-{
-    font-family: "Nombre";
-    src: url("https://grand-gala.minesparis.psl.eu/fonts/Manu.otf");
-}
-
 
 .corps
 {
