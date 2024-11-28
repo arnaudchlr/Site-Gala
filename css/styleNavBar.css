@@ -35,7 +35,7 @@
 
 .encadreBilletterie
 {
-	border: solid 2px white;
+	border: solid 2px #666666;
 }
 
 @media (max-width: 992px) {
@@ -73,7 +73,6 @@
 {
 	font-family:'Arial',Helvetica,Arial,Lucida,sans-serif;
 	text-align: center;
-	margin-left: 3vh;
 	color: #E3BB64;
 	
 }
