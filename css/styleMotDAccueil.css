@@ -1,13 +1,18 @@
 /*-- Ici se trouvent des propriétés qui ne concernent que le mot d'accueil --*/
 
 
-.motDAccueil
+.motDAccueil h2
 {
 	width: 80vw; 
 	position: relative; 
 	left: 10vw;
 	overflow-x: hidden;
-	font-size: 20px;
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+	margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {

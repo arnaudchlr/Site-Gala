@@ -84,3 +84,7 @@
 	height:auto;
 	mix-blend-mode: lighten;
 }
+
+.navbar-nav {
+    margin-left: auto; /* Centre les titres en décalant leur point de départ */
+}
