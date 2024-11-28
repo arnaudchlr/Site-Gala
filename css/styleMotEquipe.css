@@ -20,8 +20,8 @@
 }
 
 .motEquipe h4
-{
-	margin-bottom: 50px;	
+{	
+	margin-bottom: 20px;
 	font-family: "garamond";
 	font-size: 24px;
 	text-decoration: underline #6A0D00;
@@ -40,10 +40,10 @@
 
 #signatureEquipe
 {
-	margin-top: 40px;
+	margin-top: 10px;
 	position: absolute;
 	right: 0px;
-	font-family: "garamond";
-	font-size: 25px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 30px;
 	color: #E3BB64;
 }
