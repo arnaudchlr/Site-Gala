@@ -66,9 +66,14 @@
 
 .carousel-item img
 {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+    position: absolute; /* Pour permettre un positionnement précis */
+    top: 50%; /* Alignement vertical */
+    left: 50%; /* Alignement horizontal */
+    transform: translate(-50%, -50%); /* Centrage parfait */
+    max-width: 100%; /* Limite horizontale */
+    max-height: 100%; /* Limite verticale */
+    object-fit: cover; /* Assure un recadrage adapté */
+
 }
 
 .reglageHorizontal
