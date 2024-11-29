@@ -41,23 +41,11 @@
     max-width: 90%; /* Largeur principale */
 }
 
-@media (max-width: 768px) {
-    .modal-custom {
-        max-width: 90%; /* Ajustement pour tablettes */
-    }
-}
-
-@media (max-width: 576px) {
-    .modal-custom {
-        max-width: 95%; /* Ajustement pour smartphones */
-    }
-}
-
 .btn-close {
     position: absolute; /* Permet de positionner le bouton en fonction du parent */
     top: 35px; /* Ajustez l'espace par rapport au haut */
     right: 35px; /* Ajustez l'espace par rapport à la droite */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white; /* Couleur de l'icône de fermeture */
     border: none;
     cursor: pointer;
@@ -76,3 +64,21 @@
 .btn-close:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+
+@media (max-width: 768px) {
+    .modal-custom {
+        max-width: 90%; /* Ajustement pour tablettes */
+    }
+	.btn-close {
+		top: 10px; /* Ajustez l'espace par rapport au haut */
+    	right: 10px; /* Ajustez l'espace par rapport à la droite */
+	}
+}
+
+@media (max-width: 576px) {
+    .modal-custom {
+        max-width: 95%; /* Ajustement pour smartphones */
+    }
+}
+
