@@ -35,7 +35,7 @@
 .corps
 {
 	position: absolute;
-	top: calc(5.648438rem);
+	top: 5.648438rem;
 	font-family: "garamond";
 	overflow-x: hidden;
 	background-color: white;
@@ -94,17 +94,4 @@ body
 {
 	overflow-x: hidden;
 	width: 100vw;
-}
-
-
-.toutePage_louis {
-    color: white; /* Couleur du texte */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Centrage vertical sur toute la page */
-    text-align: center;
-    font-family: "Victor", sans-serif; /* Remplacez par la police souhaitée */
-    font-size: 3rem; /* Ajustez la taille du texte selon vos besoins */
-    background-color: rgb(4,0,21); /* Pour harmoniser avec le fond général */
 }

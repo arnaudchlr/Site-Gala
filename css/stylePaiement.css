@@ -1,38 +1,46 @@
-/*-- Ici se trouvent des propriétés qui ne concernent que le paiement --*/
+/* Centrer le compte à rebours sur la page */
 
-
-.toutePage
-{
-	width: 100vw;
-	min-height: calc(120vh - 5.648438rem);
-	overflow-y: scroll;
-	background-color: rgb(4,0,21);
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre les blocs */
+    height: 60vh; /* Prend toute la hauteur de la page */
+    background-color: #ffffff; /* Fond blanc pour un style sobre */
 }
 
-.pasDePaiement
-{
-	width: 200vw; 
-	position: relative;
-	top: 20vh;
-	left: 20vw; 
-	font-size: 3rem; 
-	text-align: center; 
+/* Style de chaque élément (jours, heures, minutes, secondes) */
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
 }
 
-@media (max-width: 990px) {
-	.pasDePaiement
-	{
-		top: 10vh;
-		left: 5vw;
-		width: 90vw;
-		font-size: 2rem;
-	}
-
-     .toutePage
-        {
-                width: 100vw;
-                min-height: calc(170vh - 5.648438rem);
-                overflow-y: scroll;
-        }
+/* Style des chiffres */
+.countdown-number {
+    font-size: 4rem; /* Taille des chiffres */
+    font-weight: bold;
+    color: #001f3f; /* Couleur bleu foncé */
 }
+
+/* Style des étiquettes (jours, heures, etc.) */
+.countdown-label {
+    font-size: 1.5rem; /* Taille des étiquettes */
+    color: #666666; /* Couleur gris clair pour contraste */
+    text-transform: uppercase; /* Texte en majuscules */
+    margin-top: 10px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .countdown-number {
+        font-size: 3rem; /* Réduire la taille des chiffres */
+    }
+
+    .countdown-label {
+        font-size: 1rem; /* Réduire la taille des étiquettes */
+    }
+}
+
 

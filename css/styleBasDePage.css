@@ -1,7 +1,5 @@
 /*-- Ici se trouvent des propriétés qui ne concernent que le bas de page --*/
 
-/*-- GENERALITES --*/
-
 .basDePage
 {
 	height: 100%; 
@@ -18,6 +16,7 @@
 	font-family: "Gill Sans", sans-serif;
 	padding: 0.5vh 1.5vw;
 }
+
 
 .basDePage div
 {
