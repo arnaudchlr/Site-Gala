@@ -1,45 +1,27 @@
 /*-- Ici se trouvent des propriétés qui concernent toute la page --*/
 
-
 @font-face 
 {
     font-family: "Title";
     src: url("../fonts/Brand.ttf");
 }
 
-@font-face 
-{
-    font-family: "Title2";
-    src: url("../fonts/georgia.ttf");
-}
 
-@font-face
+body
 {
-	font-family: "Subtitles";
-	src: url("../fonts/LemonMilk.otf")
-}
-
-@font-face
-{
-	font-family: "Corps thin";
-	src: url("../fonts/MadeC_thin.otf")
-}
-
-@font-face
-{
-	font-family: "Corps";
-	src: url("../fonts/MadeC_reg.otf")
-}
-
-
-.corps
-{
-	position: absolute;
-	top: 5.648438rem;
-	font-family: "garamond";
 	overflow-x: hidden;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex:1;
+    margin-top: 5.648438rem; /* Décalage égal à la hauteur du header */
+	font-family: "garamond";
 	background-color: white;
 }
+
 
 .titre h2 {
 	font-family: "Title";
@@ -51,7 +33,6 @@
 	margin-left:10vw;
 	margin-right:10vW;
 }
-
 
 .texte
 {
@@ -79,7 +60,6 @@
 .texte h4
 {	
 	margin-bottom: 20px;
-	font-family: "garamond";
 	font-size: 24px;
 	text-decoration: underline #6A0D00;
 }
@@ -87,11 +67,4 @@
 .texte p
 {
 	text-align: justify;
-	font-family: "garamond";
-}
-
-body
-{
-	overflow-x: hidden;
-	width: 100vw;
 }
