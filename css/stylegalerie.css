@@ -1,8 +1,8 @@
 /* Variables pour les breakpoints */
 :root {
     --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
+    --breakpoint-sm: ;
+    --breakpoint-md: ;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
 }
@@ -70,7 +70,7 @@
 }
 
 /* Boutons */
-.close, .nav-btn, .download-btn {
+.nav-btn, .download-btn {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
@@ -82,25 +82,27 @@
     transition: background-color 0.3s;
 }
 
+.close::before {
+    content: '\00d7'; /* Code du caractère '×' (croix) */
+    font-size: 16px;
+    color: white; /* Couleur de la croix */
+	background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
 
 .nav-btn:hover, .download-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Responsivité */
-@media (max-width: var(--breakpoint-md)) {
-    .gallery img {
-        max-width: 150px;
-    }
-}
-
-@media (max-width: var(--breakpoint-sm)) {
-    .gallery img {
-        max-width: 100px;
-    }
-
-    .close, .nav-btn, .download-btn {
-        font-size: 16px;
-        padding: 8px;
+@media (max-width: 576px) {
+    .close {
+        display: none;
     }
 }

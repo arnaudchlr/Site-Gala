@@ -23,14 +23,19 @@
 .modal-content {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrer le contenu de la modal */
 }
 
 .modal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #8CB8E8;
+	font-family: "Title";
+	text-align: center;
+	color: #E3BB64;
+	font-size: 2rem;
+    margin: 0 auto; /* Centrer le titre horizontalement */
 }
-
 /* Modal taille personnalisée */
 .modal-custom {
     max-width: 90%; /* Largeur principale */
@@ -46,4 +51,28 @@
     .modal-custom {
         max-width: 95%; /* Ajustement pour smartphones */
     }
+}
+
+.btn-close {
+    position: absolute; /* Permet de positionner le bouton en fonction du parent */
+    top: 35px; /* Ajustez l'espace par rapport au haut */
+    right: 35px; /* Ajustez l'espace par rapport à la droite */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white; /* Couleur de l'icône de fermeture */
+    border: none;
+    cursor: pointer;
+    padding: 7px 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-close::before {
+    content: '\00d7'; /* Code du caractère '×' (croix) */
+    font-size: 16px;
+    color: white; /* Couleur de la croix */
+}
+
+.btn-close:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
