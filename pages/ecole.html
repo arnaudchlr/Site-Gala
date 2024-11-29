@@ -58,24 +58,39 @@
 		
 	    <main class="corps">
 			
-<div class="image-fond-animee-reduite">
-    <div class="image-conteneur">
-        <img src="../images/batiment.jpg" alt="Image de fond du Gala" class="image-fond-reduite">
-        <div class="ombre-gradient">
-            <h2>L'ESPCI, <br> une école en <br> constante <br> évolution.</h2>
+			    <div class="titre">
+        <h2>L'ESPCI, <br> une école en constante évolution</h2>
+    </div>
+    <div id="imageContainer" class="container">
+        <!-- Carrousel pour écrans petits -->
+        <div id="imageCarousel" class="carousel slide d-lg-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/batiment.jpg" class="d-block mx-auto rounded-image" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/batiment.jpg" class="d-block mx-auto rounded-image" alt="Image 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Images côte à côte pour écrans larges -->
+        <div class="row d-none d-lg-flex justify-content-between align-items-center">
+            <div class="col-auto">
+                <img src="../images/batiment.jpg" class="img-fluid rounded-image image-spacing" alt="Image 1">
+            </div>
+            <div class="col-auto">
+                <img src="../images/batiment.jpg" class="img-fluid rounded-image image-spacing" alt="Image 2">
+            </div>
         </div>
     </div>
-</div>
-		    <div class="texte">
-		    	<h4>École Supérieure de Physique et de Chimie Industrielles de la Ville de Paris</h4>
-								<p style="text-indent: 30px;">Ecole Supérieure de Physique et de Chimie Industrielles de la Ville de Paris, l’ESPCI Paris - PSL se démarque par sa formation scientifique de haut niveau, interdisciplinaire, fortement adossée à une recherche d’excellence, alliant science fondamentale et ouverture vers les applications et l’innovation.
-
-								Elle forme chaque année près de 90 élèves-ingénieurs, recrutés parmi les meilleurs au niveau Bac+2 et Bac +3 en France, mais aussi à l’International. Elle dispense une formation originale en physique, chimie et biologie, basée sur la recherche et les travaux pratiques. Les élèves sont encadrés par plus de 500 chercheurs et 70 % d’entre eux poursuivent leur cursus en thèse, statistique unique en France. </p>
-  								<p style="text-indent: 30px;">L’école est reconnue dans le monde entier pour l’excellence de la Recherche fondamentale et appliquée issue de ses 10 Unités de Recherche, génératrice d’innovations pour l’industrie.</p>
-								<p class="lastParagraphe" style="text-indent: 30px;">Pépite de l’enseignement français, elle compte 6 Prix Nobel depuis sa création (Marie et Pierre Curie, Frédéric Joliot-Curie, Pierre-Gilles de Gennes, Georges Charpak) et est l’une des 2 meilleures écoles d’ingénieurs françaises au classement de Shanghai. Elle attire de plus en plus de candidats, et ses ingénieurs et ingénieurs-docteurs constituent un excellent vivier pour dynamiser les départements RD des grands groupes industriels avec lesquels l’école a tissé des liens très forts, ou alimenter la recherche fondamentale académique.
-								L’école dispose aussi de son propre incubateur de start-up, qui héberge actuellement 16 sociétés à fort potentiel technologique.</p>
-
-			</div>
 		</main>
 
 			
@@ -94,11 +109,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-       	<script src="../js/controleFlechesCarousel.js"></script>
-       	<script src="../js/controleTempsCarousel.js"></script>
-       	<script src="../js/dimensionnementImages.js"></script>
-       	<script src="../js/legendes.js"></script>
-       	<script src="../js/controleTailleDiapo.js"></script>
-       	<script src="../js/swipeMobileCarousel.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

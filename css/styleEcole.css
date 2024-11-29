@@ -1,94 +1,20 @@
-:root {
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+/* Bords arrondis pour les images */
+.rounded-image {
+	margin-top:30px;
+    border-radius: 15px;
+    max-width: 100%; /* S'assure que les images ne débordent pas */
+	max-height: 300px;
+    height: auto; /* Maintient le ratio d'aspect */
 }
 
-
-
-.image-fond-animee-reduite {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-	margin-bottom: 30px;
-	margin-top: 30px;
+/* Espacement entre les images */
+.image-spacing {
+    margin-left: 5%; /* Ajustez cet espace */
+    margin-right: 5%; /* Ajustez cet espace */
 }
 
-.image-conteneur {
-    position: relative;
-    width: 100%; /* Largeur relative, ajustable */
-    max-width: 800px; /* Limite la largeur maximale */
-    border-radius: 20px; /* Coins arrondis */
-    overflow: hidden; /* S'assure que l'image respecte les arrondis */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajoute une ombre élégante */
-}
-
-.image-conteneur h2 {
-	font-family: "Title";
-	color: #E3BB64;
-	font-size: 2rem;
-	margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.image-fond-reduite {
-    width: 100%; /* L'image s'adapte à la largeur du conteneur */
-    height: auto; /* Maintient les proportions de l'image */
-    display: block; /* S'assure que l'image est un élément bloc */
-}
-
-.ombre-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%; /* La partie gauche couvre 50% */
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5%; /* Positionnement du texte */
-    animation: fadeIn 2s ease-in-out forwards;
-    opacity: 0; /* Animation d'apparition */
-}
-
-.ombre-gradient h2 {
-    font-size: 2rem;
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Renforce la lisibilité du texte */
-}
-
-/* Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: var(--breakpoint-md)) {
-    .image-conteneur {
-        width: 90%; /* Réduction pour écrans moyens */
-    }
-    .ombre-gradient h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: var(--breakpoint-sm)) {
-    .image-conteneur {
-        width: 95%; /* Réduction pour petits écrans */
-    }
-    .ombre-gradient {
-        width: 70%; /* Étend l'ombre sur les petits écrans */
-    }
-    .ombre-gradient h2 {
-        font-size: 1.5rem;
-    }
+/* Limite la hauteur des images dans le carrousel */
+.carousel .carousel-inner img {
+    max-height: 400px; /* Ajustez si nécessaire */
+    object-fit: cover;
 }
