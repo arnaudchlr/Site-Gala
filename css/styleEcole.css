@@ -16,7 +16,7 @@
 
         .ecole-container .texte2 {
             text-align: justify;
-            margin: 20px 0;
+            margin: 20px;
             font-size: 1.1rem;
             max-width: 800px; /* Limiter la largeur du texte */
             line-height: 1.6; /* Meilleure lisibilité du texte */
