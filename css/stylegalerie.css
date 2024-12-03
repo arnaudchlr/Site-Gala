@@ -106,3 +106,20 @@
         display: none;
     }
 }
+
+.filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+#year-select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

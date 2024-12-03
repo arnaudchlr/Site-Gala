@@ -49,3 +49,23 @@ modal.addEventListener("click", (e) => {
         closeModal();
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const yearSelect = document.getElementById("year-select");
+    const gallery = document.getElementById("gallery");
+    const images = gallery.querySelectorAll("img");
+
+    yearSelect.addEventListener("change", function () {
+        const selectedYear = this.value;
+
+        images.forEach((img) => {
+            const imgYear = img.getAttribute("data-year");
+            if (selectedYear === "all" || imgYear === selectedYear) {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        });
+    });
+});
